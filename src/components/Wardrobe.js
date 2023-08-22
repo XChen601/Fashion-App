@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "../css/Wardrobe.css";
 
-function Outfits() {
+function Wardrobe() {
   const [images, setImages] = React.useState([]);
 
   const handleImageChange = (e) => {
@@ -37,4 +37,4 @@ function Outfits() {
   );
 }
 
-export default Outfits;
+export default Wardrobe;

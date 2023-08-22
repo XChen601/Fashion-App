@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Homepage from "./components/Homepage";
-import Outfits from "./components/Wardrobe";
+import Wardrobe from "./components/Wardrobe";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/outfits" element={<Outfits />} />
+          <Route path="/wardrobe" element={<Wardrobe />} />
         </Routes>
       </div>
     </Router>
