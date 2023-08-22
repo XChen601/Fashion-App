@@ -1,0 +1,64 @@
+/* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+section.clothings {
+  background-color: #fff;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.clothings h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #444;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* File input styling */
+#image_input {
+  display: none; /* Hide the default file input */
+}
+
+#image_input + label {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Clothing list and items */
+.clothing-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.clothing {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.clothing img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.clothing:hover img {
+  transform: scale(1.05);
+}
