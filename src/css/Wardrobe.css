@@ -1,14 +1,3 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-div {
-  box-sizing: border-box;
-}
 
 h2 {
   background-color: #333;
@@ -26,37 +15,29 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Clothing Section Styles */
-.clothings {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .clothing-list, .laundry-list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin-top: 20px;
   justify-content: center;
 }
-
 .clothing {
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 5px;
-  position: relative;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dotted #333;
 }
 
 .clothing img {
-  max-width: 100px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
 }
 
 .clothing button {
-  display: block;
-  margin: 5px auto;
+  margin: 5px 3px;
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
@@ -70,21 +51,14 @@ section {
   background-color: #555;
 }
 
-/* Input Styles */
 input[type="file"] {
   display: none;
 }
 
 label {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border-radius: 5px;
+  background-image: url('../images/plus.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-label:hover {
-  background-color: #555;
 }

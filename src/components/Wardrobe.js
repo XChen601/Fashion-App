@@ -38,15 +38,19 @@ function Wardrobe() {
       <section className="clothings">
         <h2>My Clothings</h2>
         <input type="file" id="image_input" onChange={handleImageChange} />
-        <label for="image_input">Add Clothing</label>
         <div className="clothing-list">
+          <label for="image_input" className="clothing">
+            Add Clothing
+          </label>
           {clothes.map((imageSrc, index) => (
             <div class="clothing">
               <img key={index} src={imageSrc} alt={`Clothing ${index}`} />
-              <button onClick={() => moveToLaundry(index)}>Laundry</button>
-              <button onClick={() => removeImage(setClothes, clothes, index)}>
-                Remove
-              </button>
+              <div>
+                <button onClick={() => moveToLaundry(index)}>Laundry</button>
+                <button onClick={() => removeImage(setClothes, clothes, index)}>
+                  Remove
+                </button>
+              </div>
             </div>
           ))}
         </div>
@@ -57,10 +61,12 @@ function Wardrobe() {
           {laundry.map((imageSrc, index) => (
             <div className="clothing" key={index}>
               <img src={imageSrc} alt={`Laundry ${index}`} />
-              <button onClick={() => moveToClothings(index)}>Washed</button>
-              <button onClick={() => removeImage(setLaundry, laundry, index)}>
-                Remove
-              </button>
+              <div>
+                <button onClick={() => moveToClothings(index)}>Washed</button>
+                <button onClick={() => removeImage(setLaundry, laundry, index)}>
+                  Remove
+                </button>
+              </div>
             </div>
           ))}
         </div>
