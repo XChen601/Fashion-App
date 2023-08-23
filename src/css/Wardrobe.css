@@ -12,7 +12,7 @@ section.clothings {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .clothings h2 {
@@ -26,10 +26,11 @@ section.clothings {
 
 /* File input styling */
 #image_input {
-  display: none; /* Hide the default file input */
+  display: none;
+  /* Hide the default file input */
 }
 
-#image_input + label {
+#image_input+label {
   background-color: #333;
   color: #fff;
   padding: 10px 20px;
