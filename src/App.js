@@ -1,21 +1,26 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 import Homepage from "./components/Homepage";
 import Wardrobe from "./components/Wardrobe";
-import Navbar from "./components/Navbar";
-
+import Navigation from "./components/Navigation";
+import {Helmet} from "react-helmet"
 function App() {
   return (
-    <Router>
+    <div>
+      <Router>
       <div>
-        <Navbar />
+        <Helmet>
+        <title>PerfectFit.com</title>
+        </Helmet>
+        <Navigation/>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/wardrobe" element={<Wardrobe />} />
         </Routes>
       </div>
-    </Router>
+      </Router>
+    </div>
+    
   );
 }
 
