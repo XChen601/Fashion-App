@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "../css/Wardrobe.css";
 
 function Wardrobe() {
-  const [clothes, setClothes] = useState([]);
-  const [laundry, setLaundry] = useState([]);
+  const [clothes, setClothes] = useState(
+    JSON.parse(localStorage.getItem("clothes")) || []
+  );
+  const [laundry, setLaundry] = useState(
+    JSON.parse(localStorage.getItem("laundry")) || []
+  );
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -32,6 +36,15 @@ function Wardrobe() {
   const removeImage = (listSetter, list, index) => {
     listSetter(list.filter((_, idx) => idx !== index));
   };
+
+  // Use useEffect to update localStorage whenever clothes or laundry state changes
+  useEffect(() => {
+    localStorage.setItem("clothes", JSON.stringify(clothes));
+  }, [clothes]);
+
+  useEffect(() => {
+    localStorage.setItem("laundry", JSON.stringify(laundry));
+  }, [laundry]);
 
   return (
     <div className="wardrobe-page">
