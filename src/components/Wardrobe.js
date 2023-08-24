@@ -34,7 +34,7 @@ function Wardrobe() {
   };
 
   return (
-    <div>
+    <div className="wardrobe-page">
       <section className="clothings">
         <h2>My Clothings</h2>
         <input type="file" id="image_input" onChange={handleImageChange} />

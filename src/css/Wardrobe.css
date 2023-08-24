@@ -1,7 +1,13 @@
+* {
+  color: #ffc008;
+}
+.wardrobe-page {
+  margin-top: 115px;
+}
 
 h2 {
-  background-color: #333;
-  color: #fff;
+  background-color: #212529;;
+  color: #ffc008;
   padding: 10px;
   text-align: center;
   margin: 0;
@@ -23,6 +29,7 @@ section {
   justify-content: center;
 }
 .clothing {
+  min-height: 200px;
   width: 200px;
   display: flex;
   flex-direction: column;
