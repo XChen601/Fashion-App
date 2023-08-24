@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Homepage.css";
 function Homepage() {
   function JavascriptFunc() {
     alert("Hello World!");
@@ -7,9 +7,7 @@ function Homepage() {
 
   return (
     <div>
-      <h1>Homepage</h1>
-      <div>SOMETHING</div>
-      <div>HTML can just be written here</div>
+
     </div>
   );
 }
