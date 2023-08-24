@@ -6,13 +6,20 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.3.1",
     "bootstrap-icons": "^1.10.5",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.10.1",
+    "react-parallax": "^3.5.1",
     "react-router-dom": "^6.15.0",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-simple-typewriter": "^5.0.1",
+    "reactstrap": "^9.2.0",
+    "web-vitals": "^2.1.4",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-align: center;
+     
+  }
+  html{
+    background-color: black;
+  }
+  .highlight{
+    color: white;
+    font-weight: lighter;
+    font-family: yesevaOne;
+    font-size: 4rem;
+  }
+  .type-writer{
+    color: yellow;
+    font-weight: lighter;
+    font-family: yesevaOne;
+    font-size: 4rem;
+    text-shadow: black 1px -10px 30px;
+  }
+
+  .part-two{
+    color: white;
+    font-weight: lighter;
+    font-family: 'Noto Serif';
+    font-size: 3rem;
+  }
+  .content{
+    height: 100vh;
+    width: 10%;
+  }
+  .text-content{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 5px 15px;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 20px;
+  }
+
+  .sign-up{
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    padding: 0px 17px;
+    border-radius: 50px;
+    background-color: #ffc008;
+    color: black;
+    font-family: yesevaOne;
+    font-size: 1.3rem;
+    font-weight: 900;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  .sign-up:hover{
+    color: #ffc008;
+    background-color: white;
+  }
+  
+.footer{
+    display: flex;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    font-size: 1.5rem;
+    font-family: yesevaOne;
+    font-weight: bold;
+}

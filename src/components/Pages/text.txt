@@ -1,0 +1,22 @@
+Navigation bar
+
+---> Home   link -> 
+---> Story  link ->
+---> Team   link ->
+---> SignIn link ->
+Color: #ffc008
+
+-----
+
+Effortless style At Your Fingertips <
+
+PerfectFit prepares outfits everyday based on Your Personal Wardrobe and Weather.
+
+We Help you Look Stylish and save valuable time
+
+
+Team Members:
+Xing Chen 🙃
+Bryan Rivera 💯
+Tenzing Nyima 😎
+Salif Tankoano 🤔
