@@ -1,64 +1,64 @@
-/* General styling */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
 
-section.clothings {
-  background-color: #fff;
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.clothings h2 {
-  margin-top: 0;
-  font-size: 24px;
-  color: #444;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-/* File input styling */
-#image_input {
-  display: none; /* Hide the default file input */
-}
-
-#image_input + label {
+h2 {
   background-color: #333;
   color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
 }
 
-/* Clothing list and items */
-.clothing-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.clothing-list, .laundry-list {
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   margin-top: 20px;
+  justify-content: center;
 }
-
 .clothing {
-  position: relative;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  overflow: hidden;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dotted #333;
 }
 
 .clothing img {
   width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
+  height: 180px;
+  object-fit: contain;
 }
 
-.clothing:hover img {
-  transform: scale(1.05);
+.clothing button {
+  margin: 5px 3px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.clothing button:hover {
+  background-color: #555;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label {
+  background-image: url('../images/plus.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
 }
