@@ -1,0 +1,101 @@
+.main{
+    background-color: black;
+}
+.section{
+    display: flex;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+h1{
+    font-family: yesevaOne;
+    font-size: 4rem;
+}
+.part-one{
+    margin-top: 15%;
+}
+.meet-txt{
+    margin-top: 5%;
+    background-color: black;
+}
+#meet{
+    color: red;
+}
+#key-word{
+    color: red;
+    font-family: 'yesevaOne';
+}
+/* React Logo Animation */
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+.App-logo {
+    height: 10vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 10s linear;
+    }
+}
+/* Other Logos Animation */
+.lang-logo {
+    height: 10vmin;
+    pointer-events: none;
+  }
+  
+
+
+.highlight{
+    color: white;
+    font-weight: lighter;
+    font-family: yesevaOne;
+    font-size: 4rem;
+  }
+.team-type-writer{
+    color: white;
+    font-weight: lighter;
+    font-family: yesevaOne;
+    font-size: 4rem;
+    text-shadow: black 1px -10px 30px;
+}
+.salif-text{
+    color: white;
+    font-family: 'Noto Serif';
+    font-size: 1.5rem;
+}
+.team-content{
+    height: 40vh;
+    width: 100%;
+  }
+.team-text-content{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 5px 15px;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 20px;
+}
+footer{
+    display: flex;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    font-size: 1.5rem;
+    font-family: yesevaOne;
+    font-weight: bold;
+}

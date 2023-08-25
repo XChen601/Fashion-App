@@ -9,11 +9,10 @@ import dogs from "../../components/img/dogs.png";
 import {Cursor} from "react-simple-typewriter";
 import Navigation from "../Navigation";
 import {Helmet} from "react-helmet";
-import { Col, Container, Row } from "reactstrap";
-
+import {Container} from "reactstrap";
 
 function LandingPage(args) {
-  
+    
     return (
       <div>
         <Helmet>
@@ -21,7 +20,6 @@ function LandingPage(args) {
         </Helmet>
         <Navigation/>
         <Parallax strength={600} bgImage={woman}>
-          
           <div className="content">
             <div className="text-content"> 
               <h1 className="type-writer">
