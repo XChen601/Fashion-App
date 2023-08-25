@@ -59,10 +59,9 @@ function LandingPage(args) {
         </Parallax>
         <footer className="footer">
           <Container fluid="xl">
-            All Rights Reserved | CUNY TECH PREP SUMMER 2023 HACKATHON | Designed By Team Magic ✨ 
+            All Rights Reserved | <span className="white-footer">CUNY TECH PREP SUMMER 2023 HACKATHON</span> | Designed By <span className="white-footer">Team Magic ✨</span> 
           </Container>
-        </footer>
-        
+        </footer> 
       </div>
     );
   }

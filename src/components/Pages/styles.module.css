@@ -1,0 +1,35 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+    margin-top: 90px;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	font-weight: bolder;
+	/* line-height: 1rem; */
+	text-align: center;
+}
+
+.text1 {
+    font-family: yesevaOne;
+	font-size: 4rem;
+	color: #ffc008;
+	margin: 0;
+}
+
+.text2 {
+    font-family: yesevaOne;
+	font-size: 3rem;
+	color: #ffc008;
+	margin: 0;
+}
+
+.text3 {
+    font-family: yesevaOne;
+	font-size: 3rem;
+	color: white;
+	margin: 0;
+}

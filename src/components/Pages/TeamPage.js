@@ -60,7 +60,8 @@ function TeamPage(){
                         </Col>
                         <Col>
                             <h1 className="name">Salif Tankoano</h1>
-                            <p className="salif-text">" Every pixel, every animation, every interaction is a testament to my commitment to <span id="key-word">excellence.</span>"<br/><br/>I believe that a website is more than just a collection of pages – it's an immersive <span id="key-word">journey</span>, a digital tapestry where every thread of code contributes to an enchanting narrative.</p>
+                            <br/>
+                            <p className="salif-text">" Every pixel, animation and interaction is a testament to my commitment to <span id="key-word">excellence.</span>"</p>
                         </Col>
                         <Col className="space">
                             
@@ -123,7 +124,7 @@ function TeamPage(){
 
             <footer className="footer">
                 <Container fluid="xl">
-                    All Rights Reserved | CUNY TECH PREP SUMMER 2023 HACKATHON | Designed By Team Magic ✨ 
+                    All Rights Reserved | <span className="white-footer">CUNY TECH PREP SUMMER 2023 HACKATHON</span> | Designed By <span className="white-footer">Team Magic ✨</span> 
                 </Container>
             </footer>
         </div>  

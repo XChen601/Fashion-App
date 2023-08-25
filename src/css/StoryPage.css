@@ -1,0 +1,21 @@
+.footer-story{
+    margin-top: 100px;
+    display: flex;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    font-size: 1.5rem;
+    font-family: yesevaOne;
+    font-weight: bold;
+}
+.white-footer{
+    color: white;
+}
+.video-player{
+    margin-top: -50px;
+}
+.two{
+    background-color: black;
+}
