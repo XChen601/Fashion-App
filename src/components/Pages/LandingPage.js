@@ -1,18 +1,24 @@
 import "../../css/LandingPage.css";
 import 'bootstrap/dist/css/bootstrap.css';
 import {Parallax} from "react-parallax";
-import woman from "../../components/img/woman.jpg";
 import {FcGoogle} from "react-icons/fc";
-
-
-import dogs from "../../components/img/dogs.png";
-import {Cursor} from "react-simple-typewriter";
-import Navigation from "../Navigation";
 import {Helmet} from "react-helmet";
 import {Container} from "reactstrap";
+import {Cursor} from "react-simple-typewriter";
+
+import woman from "../../components/img/woman.jpg";
+import dogs from "../../components/img/dogs.png";
+import Navigation from "../Navigation";
+
+//Firebase 
+import {GoogleAuthProvider, signInWithPopup} from "firebase/auth";
+import {auth} from "../firebaseConfig";
 
 function LandingPage(args) {
-    
+  const handleGoogle = async (e)=>{
+    const provider = await new GoogleAuthProvider();
+    return signInWithPopup(auth,provider);
+  }
     return (
       <div>
         <Helmet>
@@ -47,7 +53,7 @@ function LandingPage(args) {
         <Parallax strength={600} bgImage={dogs}>
             <div className="content">
               <div className="text-content"> 
-              <button className="sign-up">Sign Up Today <FcGoogle/></button> 
+              <button className="sign-up" onClick={handleGoogle}>Sign Up Today <FcGoogle/></button> 
               </div>
             </div>
         </Parallax>

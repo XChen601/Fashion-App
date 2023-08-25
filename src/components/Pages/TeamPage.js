@@ -99,7 +99,7 @@ function TeamPage(){
                         </Col>
                         <Col className="person-text">
                             <h1 className="name">Xing Chen</h1>
-                            <p className="salif-text">" My role is back-end developer is to create seemless flow of data "</p>
+                            <p className="salif-text">" My role as a back-end developer is to create seemless flow of data "</p>
                             
                         </Col>
                         <Col className="space">
