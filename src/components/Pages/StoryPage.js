@@ -15,7 +15,7 @@ const typingText = [
 	{
 		text: [
 			{
-				content: 'Should this today?',
+				content: 'Should I wear this today?',
 				className: styles.text3,
 				tag: 'span',
 				yoyo: true,
