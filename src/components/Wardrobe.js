@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "../css/Wardrobe.css";
+import Navigation from "./Navigation";
 
 function Wardrobe() {
   const [clothes, setClothes] = useState(
@@ -48,6 +49,7 @@ function Wardrobe() {
 
   return (
     <div className="wardrobe-page">
+      <Navigation />
       <section className="clothings">
         <h2>My Clothings</h2>
         <input type="file" id="image_input" onChange={handleImageChange} />
