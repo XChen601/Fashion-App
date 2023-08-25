@@ -10,14 +10,24 @@ function Wardrobe() {
     JSON.parse(localStorage.getItem("laundry")) || []
   );
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [clothingName, setClothingName] = useState("");
+  const [clothingCategory, setClothingCategory] = useState("");
+
   const handleImageChange = (e) => {
     const file = e.target.files[0];
 
     if (file) {
       const reader = new FileReader();
-
       reader.onloadend = () => {
-        setClothes((prevImages) => [...prevImages, reader.result]);
+        const newClothing = {
+          image: reader.result,
+          name: clothingName,
+          category: clothingCategory,
+        };
+        setClothes((prevClothes) => [...prevClothes, newClothing]);
+        setClothingName("");
+        setClothingCategory("");
       };
 
       reader.readAsDataURL(file);
@@ -48,16 +58,29 @@ function Wardrobe() {
 
   return (
     <div className="wardrobe-page">
+      <UploadModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        onUpload={handleImageChange}
+        clothingName={clothingName}
+        setClothingName={setClothingName}
+        clothingCategory={clothingCategory}
+        setClothingCategory={setClothingCategory}
+      />
       <section className="clothings">
         <h2>My Clothings</h2>
-        <input type="file" id="image_input" onChange={handleImageChange} />
         <div className="clothing-list">
-          <label for="image_input" className="clothing">
-            Add Clothing
-          </label>
-          {clothes.map((imageSrc, index) => (
-            <div class="clothing">
-              <img key={index} src={imageSrc} alt={`Clothing ${index}`} />
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="clothing add-btn"
+          >
+            Add New Clothing
+          </button>
+          {clothes.map((clothing, index) => (
+            <div className="clothing" key={index}>
+              <img src={clothing.image} alt={clothing.name} />
+              <p>Name: {clothing.name}</p>
+              <p>Category: {clothing.category}</p>
               <div>
                 <button onClick={() => moveToLaundry(index)}>Laundry</button>
                 <button onClick={() => removeImage(setClothes, clothes, index)}>
@@ -71,9 +94,11 @@ function Wardrobe() {
       <section>
         <h2>Laundry</h2>
         <div className="laundry-list">
-          {laundry.map((imageSrc, index) => (
+          {laundry.map((clothing, index) => (
             <div className="clothing" key={index}>
-              <img src={imageSrc} alt={`Laundry ${index}`} />
+              <img src={clothing.image} alt={clothing.name} />
+              <p>Name: {clothing.name}</p>
+              <p>Category: {clothing.category}</p>
               <div>
                 <button onClick={() => moveToClothings(index)}>Washed</button>
                 <button onClick={() => removeImage(setLaundry, laundry, index)}>
@@ -85,6 +110,43 @@ function Wardrobe() {
         </div>
       </section>
     </div>
+  );
+}
+
+function UploadModal({
+  isOpen,
+  onClose,
+  onUpload,
+  clothingName,
+  setClothingName,
+  clothingCategory,
+  setClothingCategory,
+}) {
+  return (
+    isOpen && (
+      <div className="clothing-modal">
+        <div className="clothing-modal-content">
+          <h2>Upload Clothing</h2>
+          <input
+            type="text"
+            placeholder="Clothing Name"
+            value={clothingName}
+            onChange={(e) => setClothingName(e.target.value)}
+            id="clothing-name"
+          />
+
+          <input
+            type="text"
+            placeholder="Category"
+            value={clothingCategory}
+            onChange={(e) => setClothingCategory(e.target.value)}
+          />
+
+          <input type="file" id="image_input" onChange={onUpload} />
+          <button onClick={onClose}>Close</button>
+        </div>
+      </div>
+    )
   );
 }
 

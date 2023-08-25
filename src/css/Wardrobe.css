@@ -58,14 +58,35 @@ section {
   background-color: #555;
 }
 
-input[type="file"] {
-  display: none;
-}
 
-label {
+.add-btn {
   background-image: url('../images/plus.webp');
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 80%;
   cursor: pointer;
 }
+
+.clothing-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the modal is on top of other content */
+}
+
+.clothing-modal-content {
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
