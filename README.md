@@ -1,6 +1,8 @@
 # PerfectFit
 Outfits made easy
 
+[Website]([https://link-url-here.org](https://xchen601.github.io/Fashion-App/)) - https://xchen601.github.io/Fashion-App/
+
 ## Our Team
 Salif Tankoano - Front-End Developer
 
