@@ -1,0 +1,51 @@
+.parent-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+body {
+    background-color: rgb(91, 91, 91);
+}
+
+.welcome-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+}
+
+.welcome-time,
+.welcome-user {
+    border: .3vw solid rgb(168, 168, 168);
+    border-radius: 10px;
+    padding: 2vw;
+    margin: 1.5vw;
+}
+
+.welcome-user {
+    border-style: none;
+}
+
+
+#form {
+    margin-bottom: 3vh;
+}
+
+#text-box {
+    border-radius: .3vw;
+    margin-right: 4vw;
+    width: 10vw;
+}
+
+#click-button {
+    width: 5vw;
+    color: black;
+}
+
+#text-box,
+#click-button {
+    font-size: 2vh;
+    height: 3vh;
+}
