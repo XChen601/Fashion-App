@@ -41,6 +41,11 @@ function Navigation(args) {
               </Link>
             </NavItem>
             <NavItem>
+              <Link to="/Wardrobe" className='links'>
+                <NavLink href="/Wardrobe" style={{color: '#ffc008', fontSize: "1.5rem", fontFamily: 'yesevaOne', fontWeight: 'bold'}}>Wardrobe</NavLink>
+              </Link>
+            </NavItem>
+            <NavItem>
               <Link to="/StoryPage" className='links'>
                 <NavLink href="/StoryPage" style={{ color: '#ffc008', fontSize: "1.5rem", fontFamily: 'yesevaOne', fontWeight: 'bold' }}>Story</NavLink>
               </Link>
