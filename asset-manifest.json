@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Fashion-App/static/css/main.292ed92f.css",
+    "main.js": "/Fashion-App/static/js/main.d6ab5c59.js",
+    "static/js/787.8524704a.chunk.js": "/Fashion-App/static/js/787.8524704a.chunk.js",
+    "static/media/perfect-fit.mp4": "/Fashion-App/static/media/perfect-fit.86f21015554d05e0d1ce.mp4",
+    "static/media/dogs.png": "/Fashion-App/static/media/dogs.383cc34abef6d7b7228f.png",
+    "static/media/back.jpg": "/Fashion-App/static/media/back.2e44ab7bec23b093feeb.jpg",
+    "static/media/NotoSerif-Italic-VariableFont_wdth,wght.ttf": "/Fashion-App/static/media/NotoSerif-Italic-VariableFont_wdth,wght.a85cf554e3b617e7b50a.ttf",
+    "static/media/woman.jpg": "/Fashion-App/static/media/woman.ce0f9786450974e03707.jpg",
+    "static/media/front.jpg": "/Fashion-App/static/media/front.d7a3d7e08a186de2810b.jpg",
+    "static/media/bryan.png": "/Fashion-App/static/media/bryan.bc5bdce978c3c32e6d9d.png",
+    "static/media/xing.png": "/Fashion-App/static/media/xing.2ca60dcce3ee87f5d2a9.png",
+    "static/media/YesevaOne-Regular.ttf": "/Fashion-App/static/media/YesevaOne-Regular.77e7411de8c57683e277.ttf",
+    "static/media/tenzing.jpeg": "/Fashion-App/static/media/tenzing.97b9feb451895a6a583b.jpeg",
+    "static/media/salif.jpg": "/Fashion-App/static/media/salif.aab1f27f0184e37dd910.jpg",
+    "static/media/logo.png": "/Fashion-App/static/media/logo.c7aadb4499b86368bf3a.png",
+    "static/media/nodejs.svg": "/Fashion-App/static/media/nodejs.52cbf9a89f44655c0375b9e9f88bf9c5.svg",
+    "static/media/react.svg": "/Fashion-App/static/media/react.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/javascript.svg": "/Fashion-App/static/media/javascript.00f3e5cf8bcf4ae623b3835ca5791b15.svg",
+    "static/media/firebase.svg": "/Fashion-App/static/media/firebase.276e110384b4d3db427b943310172dc9.svg",
+    "index.html": "/Fashion-App/index.html",
+    "static/media/css.svg": "/Fashion-App/static/media/css.4e47c3122b8d2476a02f97dcfcb28640.svg",
+    "static/media/html.svg": "/Fashion-App/static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
+    "static/media/plus.webp": "/Fashion-App/static/media/plus.64bbf812ad1d42b5080f.webp",
+    "main.292ed92f.css.map": "/Fashion-App/static/css/main.292ed92f.css.map",
+    "main.d6ab5c59.js.map": "/Fashion-App/static/js/main.d6ab5c59.js.map",
+    "787.8524704a.chunk.js.map": "/Fashion-App/static/js/787.8524704a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.292ed92f.css",
+    "static/js/main.d6ab5c59.js"
+  ]
+}
