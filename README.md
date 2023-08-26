@@ -6,7 +6,9 @@ Salif Tankoano - Front-End Developer
 
 Bryan Rivera - Full-Stack Developer
 
-Xing CHen - Front-End Developer
+Xing Chen - Front-End Developer
+
+Tenzing Nyima - Back-End Developer
 
 
 # Features 
