@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "../css/Wardrobe.css";
-
+import Navigation from "./Navigation";
 function Wardrobe() {
   const [clothes, setClothes] = useState(
     JSON.parse(localStorage.getItem("clothes")) || []
@@ -66,6 +66,7 @@ function Wardrobe() {
 
   return (
     <div className="wardrobe-page">
+      <Navigation />
       <UploadModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
