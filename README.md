@@ -1,12 +1,15 @@
 # PerfectFit
-### Outfits made easy
+Outfits made easy
 
 # Our Team
 Salif Tankoano - Front-End Developer
+
 Bryan Rivera - Full-Stack Developer
+
 Xing CHen - Front-End Developer
 
-#Features 
+
+# Features 
 ### Smooth User Experience
 With the power of React and Bootstrap, the team has carefully crafted the ideal website layout.
 
