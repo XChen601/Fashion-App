@@ -1,8 +1,7 @@
-* {
-  color: #ffc008;
-}
+
 .wardrobe-page {
   margin-top: 115px;
+  background-color: black;
 }
 
 h2 {
@@ -13,10 +12,14 @@ h2 {
   margin: 0;
 }
 
+.wardrobe-page h2 {
+  color: #ffc008;
+}
+
 section {
   margin: 20px;
   padding: 20px;
-  background-color: #fff;
+  background-color: #5d5d5d;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -25,8 +28,9 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin-top: 20px;
+  padding: 20px;
   justify-content: center;
+  background-color: #212529;
 }
 .clothing {
   min-height: 200px;
@@ -35,6 +39,8 @@ section {
   flex-direction: column;
   align-items: center;
   border: 1px dotted #333;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .clothing img {
@@ -88,5 +94,20 @@ section {
   max-width: 500px;
   display: flex;
   flex-direction: column;
+  gap: 5px;
+}
+
+.add-clothing-btn {
+  background-color: rgb(119, 208, 152);
+}
+
+.close-btn {
+  background-color: rgb(109, 46, 46);
+}
+
+.modal-img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
 }
 

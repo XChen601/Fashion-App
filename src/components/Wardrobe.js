@@ -38,6 +38,7 @@ function Wardrobe() {
     setClothingName("");
     setClothingCategory("");
     setPreviewImage(""); // Clear the preview image after adding
+    setIsModalOpen(false);
   };
 
   const moveToLaundry = (index) => {
@@ -152,11 +153,17 @@ function UploadModal({
             value={clothingCategory}
             onChange={(e) => setClothingCategory(e.target.value)}
           />
-          {previewImage && <img src={previewImage} alt="Preview" />}
+          {previewImage && (
+            <img src={previewImage} alt="Preview" className="modal-img" />
+          )}
           <input type="file" id="image_input" onChange={handleImageChange} />
 
-          <button onClick={onUpload}>Add to Wardrobe</button>
-          <button onClick={onClose}>Close</button>
+          <button className="add-clothing-btn" onClick={onUpload}>
+            Add to Wardrobe
+          </button>
+          <button className="close-btn" onClick={onClose}>
+            Close
+          </button>
         </div>
       </div>
     )
