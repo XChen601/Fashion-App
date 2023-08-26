@@ -4,8 +4,9 @@
     align-items: center;
     margin-top: 10vh;
 }
-body{
-    background-color: grey;
+
+body {
+    background-color: rgb(91, 91, 91);
 }
 
 .welcome-top {
@@ -17,54 +18,34 @@ body{
 
 .welcome-time,
 .welcome-user {
-    border: .3vw solid black;
+    border: .3vw solid rgb(168, 168, 168);
     border-radius: 10px;
-    padding: 5vw;
-    margin: 2vw;
+    padding: 2vw;
+    margin: 1.5vw;
 }
 
 .welcome-user {
     border-style: none;
 }
 
-#weather-container,
-#scale-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 25px;
-    background-color: #5b585e;
+
+#form {
+    margin-bottom: 3vh;
 }
 
-#weather-container-1 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#text-box {
+    border-radius: .3vw;
+    margin-right: 4vw;
+    width: 10vw;
 }
 
-#weather-container-2,
-#weather-container-3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#click-button {
+    width: 5vw;
+    color: black;
 }
 
-#weather-container-2 div,
-#weather-container-3 div,
-#scale-container {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 25px;
-}
-
-#weather-container-2 h2,
-#weather-container-2 h3,
-#weather-container-3 h2,
-#weather-container-3 h3 {
-    margin: 0;
-    padding: 0;
-    text-align: center;
+#text-box,
+#click-button {
+    font-size: 2vh;
+    height: 3vh;
 }
