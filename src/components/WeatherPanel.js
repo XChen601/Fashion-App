@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "../css/WeatherPanel.css";
-import Navigation from "./Navigation";
-
+import {CiTempHigh} from "react-icons/ci";
+import {BsArrowDownSquareFill} from "react-icons/bs";
+import {BsArrowUpSquareFill} from "react-icons/bs";
+import {GiWindsock} from "react-icons/gi";
 function WeatherPanel({ weatherJSON, zipCode }) {
   console.log(zipCode);
   return (
@@ -14,21 +16,22 @@ function WeatherPanel({ weatherJSON, zipCode }) {
 
         <img id="icon"
           src={`https://openweathermap.org/img/wn/${weatherJSON.weather[0].icon}@4x.png`}
+          alt="weather icon"
         />
       </div>
       <div id="weather-container-2">
         <div>
-          <h2>Temperature</h2>
+          <h2>Temperature<CiTempHigh/></h2>
           <h3 id="temperature"> {Math.round(weatherJSON.main.temp)}°F</h3>
         </div>
 
         <div>
-          <h2>Low</h2>
+          <h2>Low <BsArrowDownSquareFill/></h2>
           <h3 id="low-temp">{Math.round(weatherJSON.main.temp_min)}°F</h3>
         </div>
 
         <div>
-          <h2>High</h2>
+          <h2>High <BsArrowUpSquareFill/></h2>
           <h3 id="high-temp">{Math.round(weatherJSON.main.temp_max)}°F</h3>
         </div>
 
@@ -41,7 +44,7 @@ function WeatherPanel({ weatherJSON, zipCode }) {
       </div>
       <div id="weather-container-3">
         <div>
-          <h2>Wind Speed</h2>
+          <h2>Wind Speed <GiWindsock/></h2>
           <h3 id="wind-speed">
             {weatherJSON.wind.speed} mph
           </h3>

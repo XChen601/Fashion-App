@@ -2,12 +2,25 @@ import React, { useState } from "react";
 import "../css/Weather.css";
 import Navigation from "./Navigation";
 import WeatherPanel from "./WeatherPanel";
+import {Container} from "reactstrap";
 
 function Weather() {
+    var date = new Date();
+    var hours = date.getHours();
+    
     const apiKey = "311762ba11c494164f939186b39a89b6";
     let zipURL, zipValue, zipLat, zipLon;
-    let time = "Morning";
+    let time = "";
     let name = "John Smith";
+    if (hours>=17){
+        time = "Evening";
+    }
+    else if(time>=12 && time<17){
+        time = "Afternoon";
+    }
+    else if (time>=0 && time<12){
+        time = "Morning:"
+    }
 
     const [input, setInput] = useState("");
     const [data, setData] = useState(null);
@@ -28,7 +41,7 @@ function Weather() {
         const zipJSON = await zipResponse.json();
         zipLat = zipJSON.lat;
         zipLon = zipJSON.lon;
-        if (zipLat == undefined || zipLon == undefined) {
+        if (zipLat === undefined || zipLon === undefined) {
             alert("Invalid zip code.");
         }
         const weatherDataURL = `https://api.openweathermap.org/data/2.5/weather?lat=${zipLat}&lon=${zipLon}&units=imperial&appid=${apiKey}`;
@@ -62,6 +75,11 @@ function Weather() {
                         zipCode={zip} />
                 )}
             </div>
+            <footer className="footer">
+            <Container fluid="xl">
+              All Rights Reserved | <span className="white-footer">CUNY TECH PREP SUMMER 2023 HACKATHON</span> | Designed By <span className="white-footer">Team Magic ✨</span> 
+            </Container>
+            </footer> 
         </div>
     );
 }
