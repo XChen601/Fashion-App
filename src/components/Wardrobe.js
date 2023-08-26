@@ -13,6 +13,7 @@ function Wardrobe() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [clothingName, setClothingName] = useState("");
   const [clothingCategory, setClothingCategory] = useState("");
+  const [previewImage, setPreviewImage] = useState("");
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -20,19 +21,25 @@ function Wardrobe() {
     if (file) {
       const reader = new FileReader();
       reader.onloadend = () => {
-        const newClothing = {
-          image: reader.result,
-          name: clothingName,
-          category: clothingCategory,
-        };
-        setClothes((prevClothes) => [...prevClothes, newClothing]);
-        setClothingName("");
-        setClothingCategory("");
+        setPreviewImage(reader.result);
       };
 
       reader.readAsDataURL(file);
     }
   };
+
+  const addToClothing = () => {
+    const newClothing = {
+      image: previewImage,
+      name: clothingName,
+      category: clothingCategory,
+    };
+    setClothes((prevClothes) => [...prevClothes, newClothing]);
+    setClothingName("");
+    setClothingCategory("");
+    setPreviewImage(""); // Clear the preview image after adding
+  };
+
   const moveToLaundry = (index) => {
     setLaundry((prevLaundry) => [...prevLaundry, clothes[index]]);
     setClothes((prevImages) => prevImages.filter((_, idx) => idx !== index));
@@ -61,11 +68,13 @@ function Wardrobe() {
       <UploadModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        onUpload={handleImageChange}
+        onUpload={addToClothing}
+        handleImageChange={handleImageChange}
         clothingName={clothingName}
         setClothingName={setClothingName}
         clothingCategory={clothingCategory}
         setClothingCategory={setClothingCategory}
+        previewImage={previewImage}
       />
       <section className="clothings">
         <h2>My Clothings</h2>
@@ -117,10 +126,12 @@ function UploadModal({
   isOpen,
   onClose,
   onUpload,
+  handleImageChange,
   clothingName,
   setClothingName,
   clothingCategory,
   setClothingCategory,
+  previewImage,
 }) {
   return (
     isOpen && (
@@ -141,8 +152,10 @@ function UploadModal({
             value={clothingCategory}
             onChange={(e) => setClothingCategory(e.target.value)}
           />
+          {previewImage && <img src={previewImage} alt="Preview" />}
+          <input type="file" id="image_input" onChange={handleImageChange} />
 
-          <input type="file" id="image_input" onChange={onUpload} />
+          <button onClick={onUpload}>Add to Wardrobe</button>
           <button onClick={onClose}>Close</button>
         </div>
       </div>
