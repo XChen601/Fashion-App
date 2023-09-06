@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import {getAuth} from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyB3D3Yj3qXfiA_4F3dX84mFA4-E7LBxPng",
+    apiKey: "",
     authDomain: "perfect-fit-51e0a.firebaseapp.com",
     projectId: "perfect-fit-51e0a",
     storageBucket: "perfect-fit-51e0a.appspot.com",
